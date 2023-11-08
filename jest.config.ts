@@ -5,10 +5,10 @@ export default {
       "^.+\\.tsx?$": "ts-jest" 
   // process `*.tsx` files with `ts-jest`
   },
-  "moduleNameMapper": {
+  moduleNameMapper: {
     "^.+\\.svg$": "jest-svg-transformer",
     "^.+\\.(css|less|scss)$": "identity-obj-proxy",
-    '^@app/(.*)$': '<rootDir>/$1',
+    '^@app/(.*)$': './src/$1',
   },
   // moduleNameMapper: {
   //     '\\.(gif|ttf|eot|svg|png)$': '<rootDir>/test/__ mocks __/fileMock.js',
