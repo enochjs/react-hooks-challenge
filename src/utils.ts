@@ -7,3 +7,10 @@ export const isString = (value: unknown): value is string => typeof value === 's
 export const isBoolean = (value: unknown): value is boolean => typeof value === 'boolean';
 export const isNumber = (value: unknown): value is number => typeof value === 'number';
 export const isUndef = (value: unknown): value is undefined => typeof value === 'undefined';
+export function sleep(time: number) {
+  return new Promise<void>((resolve) => {
+    setTimeout(() => {
+      resolve();
+    }, time);
+  });
+}
